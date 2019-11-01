@@ -18,7 +18,7 @@ def getScmBranch = {
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.2"
+    buildToolsVersion "28.0.3"
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_7
@@ -27,9 +27,9 @@ android {
 
     defaultConfig {
         minSdkVersion 16
-        versionCode 290
-        versionName "2.9.0"
-        targetSdkVersion 26
+        versionCode 291
+        versionName "2.9.1"
+        targetSdkVersion 28
         consumerProguardFiles 'consumer-proguard-rules.pro'
         buildConfigField "long", 'BUILT_AT', System.currentTimeMillis() + 'L'
         buildConfigField "String", "SCM_REV", getScmRevision()
@@ -46,7 +46,7 @@ android {
 ext {
     gsonVersion             = '2.8.0'
     picassoVersion          = '2.5.2'
-    supportLibraryVersion   = '26.1.0'
+    supportLibraryVersion   = '28.0.0'
 }
 
 dependencies {
